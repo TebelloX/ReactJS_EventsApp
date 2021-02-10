@@ -1,16 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./app/layout/styles.css";
-import App from "./app/layout/App.jsx";
+import App from "./app/layout/App";
 import reportWebVitals from "./reportWebVitals";
 
-const rootEl = document.getElementById("root");
+// const rootEl = document.getElementById("root");
+
+console.log("freeeeeeeeeee");
 
 function render() {
-  ReactDOM.render(<App />, rootEl);
+  ReactDOM.render(<App />, document.getElementById("root"));
 }
 
 if (module.hot) {
+  console.log("xxxx12");
   module.hot.accept("./app/layout/App", function () {
     setTimeout(render);
   });
