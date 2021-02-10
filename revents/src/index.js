@@ -9,15 +9,19 @@ const rootEl = document.getElementById("root");
 console.log("freeeeeeeeeee");
 
 function render() {
-  ReactDOM.render(<App />, document.getElementById("root"));
+  console.log("inside render");
+  ReactDOM.render(<App />, rootEl);
 }
 
 if (module.hot) {
   console.log("xxxx12");
-  module.hot.accept("./app/layout/App", () => {
+  module.hot.accept("./app/layout/App", function () {
+    console.log("set.......");
     setTimeout(render);
   });
 }
+
+render();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
