@@ -11,7 +11,7 @@ function render() {
 }
 
 if (module.hot) {
-  module.hot.accept("./App", function () {
+  module.hot.accept("./app/layout/App", function () {
     setTimeout(render);
   });
 }
