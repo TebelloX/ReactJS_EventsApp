@@ -6,17 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 
 const rootEl = document.getElementById("root");
 
-console.log("freeeeeeeeeee");
-
 function render() {
-  console.log("inside render");
   ReactDOM.render(<App />, rootEl);
 }
 
 if (module.hot) {
-  console.log("xxxx12");
   module.hot.accept("./app/layout/App", function () {
-    console.log("set.......");
     setTimeout(render);
   });
 }
