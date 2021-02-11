@@ -13,6 +13,10 @@ export default function NavBar() {
         <Menu.Item>
           <Button positive inverted content='Create Event' />
         </Menu.Item>
+        <Menu.Item>
+          <Button basic inverted content='Login'></Button>
+          <Button basic inverted content='Login'></Button>
+        </Menu.Item>
       </Container>
     </Menu>
   );
