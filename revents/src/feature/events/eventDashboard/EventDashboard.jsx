@@ -1,7 +1,7 @@
 import { Grid } from "semantic-ui-react";
 import React from "react";
 
-const EventDashboard = () => {
+export default function EventDashboard() {
   return (
     <Grid>
       <Grid.Column width={10}>
@@ -12,6 +12,4 @@ const EventDashboard = () => {
       </Grid.Column>
     </Grid>
   );
-};
-
-export default EventDashboard;
+}
