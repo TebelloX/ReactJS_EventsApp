@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "semantic-ui-react";
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <button className='ui icon red button'>
         <i className='user icon' /> CSS Button
       </button>
+      <Button />
     </div>
   );
 }
