@@ -3,7 +3,7 @@ import EventDashboard from "../../feature/events/eventDashboard/EventDashboard";
 
 export default function App() {
   return (
-    <div className='App'>
+    <div>
       <h1>Re-events</h1>
       <EventDashboard />
     </div>
