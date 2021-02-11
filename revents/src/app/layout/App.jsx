@@ -5,12 +5,12 @@ import NavBar from "../../feature/nav/NavBar";
 
 export default function App() {
   return (
-    <div>
+    <>
       <h1>Re-events</h1>
       <NavBar />
-      <Container>
+      <Container className='main'>
         <EventDashboard />
       </Container>
-    </div>
+    </>
   );
 }
