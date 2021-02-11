@@ -8,7 +8,7 @@ export default function App() {
       <button className='ui icon red button'>
         <i className='user icon' /> CSS Button
       </button>
-      <Button />
+      <Button icon='user' content='React Button' color='green' />
     </div>
   );
 }
