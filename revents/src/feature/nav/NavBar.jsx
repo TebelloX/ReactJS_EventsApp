@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Container } from "semantic-ui-react";
+import { Menu, Container, Button } from "semantic-ui-react";
 
 export default function NavBar() {
   return (
@@ -10,6 +10,9 @@ export default function NavBar() {
           Re-vents
         </Menu.Item>
         <Menu name='Events' />
+        <Menu.Item>
+          <Button />
+        </Menu.Item>
       </Container>
     </Menu>
   );
