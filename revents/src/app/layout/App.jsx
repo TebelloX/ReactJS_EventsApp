@@ -2,11 +2,8 @@ import React from "react";
 
 function App() {
   const title = React.createElement("h1", {}, "Revents no JSX");
-  return (
-    <div className='App'>
-      <h1>Re-events</h1>
-    </div>
-  );
+  const div = React.createElement("div", { className: "App" }, title);
+  return div;
 }
 
 export default App;
