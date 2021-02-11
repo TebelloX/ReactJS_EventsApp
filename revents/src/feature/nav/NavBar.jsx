@@ -11,7 +11,7 @@ export default function NavBar() {
         </Menu.Item>
         <Menu name='Events' />
         <Menu.Item>
-          <Button />
+          <Button positive inverted content='Create Event' />
         </Menu.Item>
       </Container>
     </Menu>
