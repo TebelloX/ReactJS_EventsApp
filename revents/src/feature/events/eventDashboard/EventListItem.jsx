@@ -10,6 +10,7 @@ export default function EventListItem() {
             <Item size='tiny' circular src='/assets/user.png' />
             <Item.Content>
               <Item.Header content='Event Title' />
+              <Item.Description>Hosted by Bob</Item.Description>
             </Item.Content>
           </Item>
         </Item.Group>
