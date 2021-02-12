@@ -30,7 +30,7 @@ export default function EventListItem() {
           <EventListAttendee />
         </List>
       </Segment>
-      <Segment>
+      <Segment clearing>
         <span>Description of event</span>
         <Button color='teal' floated='right' content='View' />
       </Segment>
