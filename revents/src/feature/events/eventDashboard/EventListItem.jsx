@@ -6,7 +6,9 @@ export default function EventListItem() {
     <Segment.Group>
       <Segment>
         <Item.Group>
-          <Item></Item>
+          <Item>
+            <Item size='tiny' circular src='/assets/user.png' />
+          </Item>
         </Item.Group>
       </Segment>
     </Segment.Group>
