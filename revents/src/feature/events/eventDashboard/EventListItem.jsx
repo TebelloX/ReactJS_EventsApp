@@ -5,7 +5,9 @@ export default function EventListItem() {
   return (
     <Segment.Group>
       <Segment>
-        <Item.Group></Item.Group>
+        <Item.Group>
+          <Item></Item>
+        </Item.Group>
       </Segment>
     </Segment.Group>
   );
