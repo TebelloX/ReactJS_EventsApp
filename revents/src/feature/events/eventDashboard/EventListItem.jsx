@@ -32,7 +32,7 @@ export default function EventListItem() {
       </Segment>
       <Segment>
         <span>Description of event</span>
-        <Button color='teal' floated='right' />
+        <Button color='teal' floated='right' content='View' />
       </Segment>
     </Segment.Group>
   );
