@@ -1,12 +1,13 @@
 import React from "react";
+import EventListItem from "./EventListItem";
 
 export default function EventList() {
   return (
     <>
-      <EventList />
-      <EventList />
-      <EventList />
-      <EventList />
+      <EventListItem />
+      <EventListItem />
+      <EventListItem />
+      <EventListItem />
     </>
   );
 }
