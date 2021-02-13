@@ -8,6 +8,21 @@ export default function EventForm() {
         <Form.Field>
           <input type='text' placeholder='Event title' />
         </Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Category' />
+        </Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Event title' />
+        </Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Event title' />
+        </Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Event title' />
+        </Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Event title' />
+        </Form.Field>
       </Form>
     </Segment>
   );
