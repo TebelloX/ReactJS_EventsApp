@@ -5,7 +5,9 @@ export default function EventForm() {
     <Segment>
       <Header content='Create new event' />
       <Form>
-        <Form.Field></Form.Field>
+        <Form.Field>
+          <input type='text' placeholder='Event title' />
+        </Form.Field>
       </Form>
     </Segment>
   );
