@@ -2,6 +2,7 @@ import { Grid } from "semantic-ui-react";
 import React from "react";
 import EventList from "./EventList";
 import EventForm from "../eventForm/EventForm";
+import { sampleData } from "../../../app/api/sampleData";
 
 export default function EventDashboard() {
   return (
