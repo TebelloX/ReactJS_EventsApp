@@ -24,14 +24,13 @@ export default function EventListItem({ event }) {
       </Segment>
       <Segment secondary>
         <List horizontal>
-          <EventListAttendee />
-          <EventListAttendee />
-          <EventListAttendee />
-          <EventListAttendee />
+          {event.attendees.map((attendee) => (
+            <EventListAttendee />
+          ))}
         </List>
       </Segment>
       <Segment clearing>
-        <div>Description of event</div>
+        <div>{event.description}</div>
         <Button color='teal' floated='right' content='View' />
       </Segment>
     </Segment.Group>
