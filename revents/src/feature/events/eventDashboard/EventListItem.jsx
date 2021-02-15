@@ -2,15 +2,15 @@ import React from "react";
 import EventListAttendee from "./EventListAttendee";
 import { Button, Icon, Item, List, Segment } from "semantic-ui-react";
 
-export default function EventListItem() {
+export default function EventListItem({ event }) {
   return (
     <Segment.Group>
       <Segment>
         <Item.Group>
           <Item>
-            <Item size='tiny' circular src='/assets/user.png' />
+            <Item.Image size='tiny' circular src='{event.hostPhotoURL}' />
             <Item.Content>
-              <Item.Header content='Event Title' />
+              <Item.Header content='{event.title}' />
               <Item.Description>Hosted by Bob</Item.Description>
             </Item.Content>
           </Item>
