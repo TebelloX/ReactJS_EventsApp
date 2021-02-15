@@ -8,7 +8,7 @@ export default function EventDashboard() {
   return (
     <Grid>
       <Grid.Column width={10}>
-        <EventList />
+        <EventList event={sampleData} />
       </Grid.Column>
       <Grid.Column width={6}>
         <EventForm />
