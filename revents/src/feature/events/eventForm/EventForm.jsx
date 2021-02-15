@@ -21,7 +21,7 @@ export default function EventForm() {
           <input type='text' placeholder='Venue' />
         </Form.Field>
         <Form.Field>
-          <input type='text' placeholder='Date' />
+          <input type='date' placeholder='Date' />
         </Form.Field>
       </Form>
     </Segment>
