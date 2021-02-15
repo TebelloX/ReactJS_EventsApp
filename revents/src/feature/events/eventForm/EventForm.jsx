@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, Header, Form } from "semantic-ui-react";
+import { Segment, Header, Form, Button } from "semantic-ui-react";
 export default function EventForm() {
   return (
     <Segment>
@@ -23,6 +23,7 @@ export default function EventForm() {
         <Form.Field>
           <input type='date' placeholder='Date' />
         </Form.Field>
+        <Button type='submit' floated='right' positive content='Submit' />
       </Form>
     </Segment>
   );
