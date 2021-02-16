@@ -26,9 +26,10 @@ export default function EventForm({ setFormOpen, setEvents }) {
         <Form.Field>
           <input
             type='text'
+            name='title'
             placeholder='Event title'
             value={values.title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
         <Form.Field>
