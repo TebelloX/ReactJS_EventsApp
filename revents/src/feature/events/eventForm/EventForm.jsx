@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Segment, Header, Form, Button } from "semantic-ui-react";
 export default function EventForm({ setFormOpen, setEvents }) {
-  const [title, setTitle] = useState("");
+  const initialValues = {
+    title: "",
+    category: "",
+    description: "",
+    city: "",
+    date: "",
+  };
+
+  const [values, setValues] = useState(initialValues);
 
   function handleFormSubmit() {
     console.log(title);
+  }
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    setValues({ ...values });
   }
   return (
     <Segment clearing>
