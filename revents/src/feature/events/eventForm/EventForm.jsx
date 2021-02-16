@@ -12,12 +12,12 @@ export default function EventForm({ setFormOpen, setEvents }) {
   const [values, setValues] = useState(initialValues);
 
   function handleFormSubmit() {
-    console.log(title);
+    console.log(values);
   }
 
   function handleInputChange(e) {
     const { name, value } = e.target;
-    setValues({ ...values });
+    setValues({ ...values, [name]: value });
   }
   return (
     <Segment clearing>
@@ -27,7 +27,7 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='text'
             placeholder='Event title'
-            value={title}
+            value={values.title}
             onChange={(e) => setTitle(e.target.value)}
           />
         </Form.Field>
