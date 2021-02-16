@@ -6,7 +6,6 @@ import { sampleData } from "../../../app/api/sampleData";
 
 export default function EventDashboard() {
   const [events, setEvents] = useState(sampleData);
-  const [formOpen, setFormOpen] = useState(false);
 
   return (
     <Grid>
