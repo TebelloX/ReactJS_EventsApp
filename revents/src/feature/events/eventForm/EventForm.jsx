@@ -9,9 +9,14 @@ export default function EventForm({ setFormOpen, setEvents }) {
   return (
     <Segment clearing>
       <Header content='Create new event' />
-      <Form>
+      <Form onSubmit={handleFormSubmit}>
         <Form.Field>
-          <input type='text' placeholder='Event title' />
+          <input
+            type='text'
+            placeholder='Event title'
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
         </Form.Field>
         <Form.Field>
           <input type='text' placeholder='Category' />
