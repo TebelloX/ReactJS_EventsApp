@@ -13,9 +13,7 @@ export default function EventDashboard() {
       <Grid.Column width={10}>
         <EventList events={events} />
       </Grid.Column>
-      <Grid.Column width={6}>
-        <EventForm />
-      </Grid.Column>
+      <Grid.Column width={6}>{formOpen && <EventForm />}</Grid.Column>
     </Grid>
   );
 }
