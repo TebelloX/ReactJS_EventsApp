@@ -36,9 +36,8 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='text'
             placeholder='Category'
-            name='title'
-            placeholder='Event title'
-            value={values.title}
+            name='category'
+            value={values.category}
             onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
@@ -46,9 +45,8 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='text'
             placeholder='Description'
-            name='title'
-            placeholder='Event title'
-            value={values.title}
+            name='description'
+            value={values.description}
             onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
@@ -56,9 +54,8 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='text'
             placeholder='City'
-            name='title'
-            placeholder='Event title'
-            value={values.title}
+            name='city'
+            value={values.city}
             onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
@@ -66,9 +63,8 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='text'
             placeholder='Venue'
-            name='title'
-            placeholder='Event title'
-            value={values.title}
+            name='venue'
+            value={values.venue}
             onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
@@ -76,9 +72,8 @@ export default function EventForm({ setFormOpen, setEvents }) {
           <input
             type='date'
             placeholder='Date'
-            name='title'
-            placeholder='Event title'
-            value={values.title}
+            name='date'
+            value={values.date}
             onChange={(e) => handleInputChange(e)}
           />
         </Form.Field>
