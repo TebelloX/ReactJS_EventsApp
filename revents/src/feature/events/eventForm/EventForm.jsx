@@ -33,19 +33,54 @@ export default function EventForm({ setFormOpen, setEvents }) {
           />
         </Form.Field>
         <Form.Field>
-          <input type='text' placeholder='Category' />
+          <input
+            type='text'
+            placeholder='Category'
+            name='title'
+            placeholder='Event title'
+            value={values.title}
+            onChange={(e) => handleInputChange(e)}
+          />
         </Form.Field>
         <Form.Field>
-          <input type='text' placeholder='Description' />
+          <input
+            type='text'
+            placeholder='Description'
+            name='title'
+            placeholder='Event title'
+            value={values.title}
+            onChange={(e) => handleInputChange(e)}
+          />
         </Form.Field>
         <Form.Field>
-          <input type='text' placeholder='City' />
+          <input
+            type='text'
+            placeholder='City'
+            name='title'
+            placeholder='Event title'
+            value={values.title}
+            onChange={(e) => handleInputChange(e)}
+          />
         </Form.Field>
         <Form.Field>
-          <input type='text' placeholder='Venue' />
+          <input
+            type='text'
+            placeholder='Venue'
+            name='title'
+            placeholder='Event title'
+            value={values.title}
+            onChange={(e) => handleInputChange(e)}
+          />
         </Form.Field>
         <Form.Field>
-          <input type='date' placeholder='Date' />
+          <input
+            type='date'
+            placeholder='Date'
+            name='title'
+            placeholder='Event title'
+            value={values.title}
+            onChange={(e) => handleInputChange(e)}
+          />
         </Form.Field>
         <Button type='submit' floated='right' positive content='Submit' />
         <Button
