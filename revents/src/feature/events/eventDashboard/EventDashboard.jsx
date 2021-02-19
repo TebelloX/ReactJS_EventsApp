@@ -6,6 +6,7 @@ import { sampleData } from "../../../app/api/sampleData";
 
 export default function EventDashboard({ formOpen, setFormOpen }) {
   const [events, setEvents] = useState(sampleData);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   function handleCreateEvent(event) {
     setEvents([...events, event]);
