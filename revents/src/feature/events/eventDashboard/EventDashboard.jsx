@@ -20,7 +20,7 @@ export default function EventDashboard({ formOpen, setFormOpen }) {
   return (
     <Grid>
       <Grid.Column width={10}>
-        <EventList events={events} selectedEvent={handleSelectEvent} />
+        <EventList events={events} selectEvent={handleSelectEvent} />
       </Grid.Column>
       <Grid.Column width={6}>
         {formOpen && (
