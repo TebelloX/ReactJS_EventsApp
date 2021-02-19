@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Segment, Header, Form, Button } from "semantic-ui-react";
+import cuid from "cuid";
 export default function EventForm({ setFormOpen, setEvents, createEvent }) {
   const initialValues = {
     title: "",
