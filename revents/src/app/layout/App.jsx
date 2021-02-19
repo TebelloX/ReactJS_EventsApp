@@ -4,7 +4,7 @@ import EventDashboard from "../../feature/events/eventDashboard/EventDashboard";
 import NavBar from "../../feature/nav/NavBar";
 
 export default function App() {
-  const [formOpen, setFormOpen] = useState(true);
+  const [formOpen, setFormOpen] = useState(false);
   return (
     <>
       <h1>Re-events</h1>
