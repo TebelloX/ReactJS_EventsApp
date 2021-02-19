@@ -7,6 +7,10 @@ import { sampleData } from "../../../app/api/sampleData";
 export default function EventDashboard({ formOpen, setFormOpen }) {
   const [events, setEvents] = useState(sampleData);
 
+  function handleCreateEvent(event) {
+    setEvents([...events, event]);
+  }
+
   return (
     <Grid>
       <Grid.Column width={10}>
