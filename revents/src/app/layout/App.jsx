@@ -5,6 +5,7 @@ import NavBar from "../../feature/nav/NavBar";
 
 export default function App() {
   const [formOpen, setFormOpen] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState(null);
   return (
     <>
       <h1>Re-events</h1>
