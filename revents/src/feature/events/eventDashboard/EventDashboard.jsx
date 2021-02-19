@@ -11,11 +11,6 @@ export default function EventDashboard({ formOpen, setFormOpen }) {
     setEvents([...events, event]);
   }
 
-  function handleSelectEvent(event) {
-    setSelectedEvent(event);
-    setFormOpen(true);
-  }
-
   return (
     <Grid>
       <Grid.Column width={10}>
