@@ -8,6 +8,7 @@ export default function EventForm({ setFormOpen, setEvents, createEvent }) {
     description: "",
     city: "",
     date: "",
+    venue: "",
   };
 
   const [values, setValues] = useState(initialValues);
