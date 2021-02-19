@@ -14,7 +14,13 @@ export default function EventForm({ setFormOpen, setEvents, createEvent }) {
   const [values, setValues] = useState(initialValues);
 
   function handleFormSubmit() {
-    createEvent({ ...values, id: cuid(), hostedBy: "Bob", attendees: [] });
+    createEvent({
+      ...values,
+      id: cuid(),
+      hostedBy: "Bob",
+      attendees: [],
+      hostPhotoURL: "/assets/user.png",
+    });
     setFormOpen(false);
   }
 
