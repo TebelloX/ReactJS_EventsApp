@@ -13,6 +13,7 @@ export default function EventForm({ setFormOpen, setEvents, createEvent }) {
 
   function handleFormSubmit() {
     createEvent({ ...values, id: cuid(), hostedBy: "Bob", attendees: [] });
+    setFormOpen(false);
   }
 
   function handleInputChange(e) {
