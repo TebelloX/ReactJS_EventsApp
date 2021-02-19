@@ -26,6 +26,7 @@ export default function App() {
           formOpen={formOpen}
           setFormOpen={setFormOpen}
           selectEvent={handleSelectEvent}
+          selectedEvent={selectedEvent}
         />
       </Container>
     </>
