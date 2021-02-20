@@ -20,7 +20,7 @@ export default function App() {
   return (
     <>
       <h1>Re-events</h1>
-      <NavBar setFormOpen={setFormOpen} />
+      <NavBar setFormOpen={handleCreateFormOpen} />
       <Container className='main'>
         <EventDashboard
           formOpen={formOpen}
