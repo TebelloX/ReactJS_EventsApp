@@ -33,9 +33,9 @@ export default function EventListItem({ event, selectEvent, deleteEvent }) {
         <div>{event.description}</div>
         <Button
           onClick={() => deleteEvent(event.id)}
-          color='teal'
+          color='red'
           floated='right'
-          content='View'
+          content='Delete'
         />
         <Button
           onClick={() => selectEvent(event)}
