@@ -17,7 +17,9 @@ export default function EventDashboard({
   }
 
   function handleUpdateEvent() {
-    setEvents(events.map((evt) => evt.id === updateEvent.id ? ));
+    setEvents(
+      events.map((evt) => (evt.id === updatedEvent.id ? updatedEvent : evt))
+    );
   }
 
   return (
