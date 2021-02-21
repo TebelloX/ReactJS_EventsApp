@@ -23,7 +23,7 @@ export default function EventDashboard({
     selectEvent(null);
   }
 
-  function handleDeleteDelete(eventId) {
+  function handleDeleteEvent(eventId) {
     setEvents(events.filter((evt) => evt.id !== eventId));
   }
 
