@@ -16,6 +16,10 @@ export default function EventDashboard({
     setEvents([...events, event]);
   }
 
+  function handleUpdateEvent() {
+    setEvents(events.map((evt) => evt.id === updateEvent.id ? ));
+  }
+
   return (
     <Grid>
       <Grid.Column width={10}>
