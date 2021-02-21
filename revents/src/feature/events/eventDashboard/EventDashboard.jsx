@@ -20,6 +20,8 @@ export default function EventDashboard({
     setEvents(
       events.map((evt) => (evt.id === updatedEvent.id ? updatedEvent : evt))
     );
+    selectEvent(null);
+    setFormOpen(false);
   }
 
   return (
