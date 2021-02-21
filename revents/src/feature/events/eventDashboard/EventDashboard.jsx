@@ -36,6 +36,7 @@ export default function EventDashboard({
             setEvents={setEvents}
             createEvent={handleCreateEvent}
             selectedEvent={selectedEvent}
+            updateEvent={handleUpdateEvent}
             key={selectedEvent ? selectedEvent.id : null}
           />
         )}
