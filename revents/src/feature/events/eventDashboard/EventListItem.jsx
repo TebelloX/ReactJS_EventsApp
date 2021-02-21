@@ -2,7 +2,7 @@ import React from "react";
 import EventListAttendee from "./EventListAttendee";
 import { Button, Icon, Item, List, Segment } from "semantic-ui-react";
 
-export default function EventListItem({ event, selectEvent }) {
+export default function EventListItem({ event, selectEvent, deleteEvent }) {
   return (
     <Segment.Group>
       <Segment>
