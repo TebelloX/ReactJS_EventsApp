@@ -9,6 +9,7 @@ export default function EventDashboard({
   setFormOpen,
   selectEvent,
   selectedEvent,
+  updatedEvent,
 }) {
   const [events, setEvents] = useState(sampleData);
 
@@ -35,7 +36,7 @@ export default function EventDashboard({
             setEvents={setEvents}
             createEvent={handleCreateEvent}
             selectedEvent={selectedEvent}
-            updateEvent={handleUpdateEvent}
+            updatedEvent={handleUpdateEvent}
             key={selectedEvent ? selectedEvent.id : null}
           />
         )}
