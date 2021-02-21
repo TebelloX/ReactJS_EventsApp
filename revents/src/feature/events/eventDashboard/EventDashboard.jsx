@@ -23,6 +23,10 @@ export default function EventDashboard({
     selectEvent(null);
   }
 
+  function handleDeleteDelete(eventId) {
+    setEvents(events.filter((evt) => evt.id !== eventId));
+  }
+
   return (
     <Grid>
       <Grid.Column width={10}>

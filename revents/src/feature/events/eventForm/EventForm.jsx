@@ -21,7 +21,7 @@ export default function EventForm({
 
   function handleFormSubmit() {
     selectedEvent
-      ? updateEvent({ ...selectedEvent, values })
+      ? updateEvent({ ...selectedEvent, ...values })
       : createEvent({
           ...values,
           id: cuid(),
