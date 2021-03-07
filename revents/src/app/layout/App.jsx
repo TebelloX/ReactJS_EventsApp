@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route } from "react-router";
 import { Container } from "semantic-ui-react";
 import EventDashboard from "../../feature/events/eventDashboard/EventDashboard";
 import NavBar from "../../feature/nav/NavBar";
@@ -22,12 +23,7 @@ export default function App() {
       <h1>Re-events</h1>
       <NavBar setFormOpen={handleCreateFormOpen} />
       <Container className='main'>
-        <EventDashboard
-          formOpen={formOpen}
-          setFormOpen={setFormOpen}
-          selectEvent={handleSelectEvent}
-          selectedEvent={selectedEvent}
-        />
+        <Route />
       </Container>
     </>
   );
