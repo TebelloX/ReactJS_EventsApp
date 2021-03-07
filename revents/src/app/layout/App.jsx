@@ -23,7 +23,7 @@ export default function App() {
       <h1>Re-events</h1>
       <NavBar setFormOpen={handleCreateFormOpen} />
       <Container className='main'>
-        <Route />
+        <Route path='/' component={HomePage} />
       </Container>
     </>
   );
