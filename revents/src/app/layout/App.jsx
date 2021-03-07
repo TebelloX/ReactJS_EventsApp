@@ -26,7 +26,7 @@ export default function App() {
       <Container className='main'>
         <Route path='/' component={HomePage} />
         <Route path='/events' component={EventDashboard} />
-        <Route path='/' component={HomePage} />
+        <Route path='/events/:id' component={EventDashboard} />
         <Route path='/' component={HomePage} />
       </Container>
     </>
