@@ -4,6 +4,7 @@ import { Container } from "semantic-ui-react";
 import EventDashboard from "../../feature/events/eventDashboard/EventDashboard";
 import NavBar from "../../feature/nav/NavBar";
 import HomePage from "../../feature/home/HomePage";
+import EventForm from "../../feature/events/eventForm/EventForm";
 
 export default function App() {
   const [formOpen, setFormOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function App() {
         <Route path='/' component={HomePage} />
         <Route path='/events' component={EventDashboard} />
         <Route path='/events/:id' component={EventDashboard} />
-        <Route path='/' component={HomePage} />
+        <Route path='/createEvent' component={EventForm} />
       </Container>
     </>
   );
