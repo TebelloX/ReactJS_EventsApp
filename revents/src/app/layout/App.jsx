@@ -5,6 +5,7 @@ import EventDashboard from "../../feature/events/eventDashboard/EventDashboard";
 import NavBar from "../../feature/nav/NavBar";
 import HomePage from "../../feature/home/HomePage";
 import EventForm from "../../feature/events/eventForm/EventForm";
+import EventDetailedPage from "../../feature/events/eventDetailed/EventDetailedPage";
 
 export default function App() {
   const [formOpen, setFormOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function App() {
       <Container className='main'>
         <Route path='/' component={HomePage} />
         <Route path='/events' component={EventDashboard} />
-        <Route path='/events/:id' component={EventDashboard} />
+        <Route path='/events/:id' component={EventDetailedPage} />
         <Route path='/createEvent' component={EventForm} />
       </Container>
     </>
