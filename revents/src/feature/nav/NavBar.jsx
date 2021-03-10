@@ -13,7 +13,7 @@ export default function NavBar({ setFormOpen }) {
             style={{ marginRight: 15 }}></img>
           Re-vents
         </Menu.Item>
-        <Menu.Item name='Events' />
+        <Menu.Item as={NavLink} to='/events' name='Events' />
         <Menu.Item>
           <Button
             onClick={() => setFormOpen(true)}
