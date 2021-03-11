@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Image, Segment } from "semantic-ui-react";
+import { Button, Container, Header, Image, Segment } from "semantic-ui-react";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,9 @@ export default function HomePage() {
             src='/assets/logo.png'
             style={{ marginBottom: 12 }}
           />
+          Re-vents
         </Header>
+        <Button size='huge' inverted></Button>
       </Container>
     </Segment>
   );
