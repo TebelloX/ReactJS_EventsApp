@@ -1,5 +1,12 @@
 import React from "react";
-import { Button, Container, Header, Image, Segment } from "semantic-ui-react";
+import {
+  Button,
+  Container,
+  Header,
+  Icon,
+  Image,
+  Segment,
+} from "semantic-ui-react";
 
 export default function HomePage() {
   return (
@@ -15,6 +22,7 @@ export default function HomePage() {
         </Header>
         <Button size='huge' inverted>
           Get started
+          <Icon name='right arrow' />
         </Button>
       </Container>
     </Segment>
