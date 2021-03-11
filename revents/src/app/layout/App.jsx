@@ -24,13 +24,14 @@ export default function App() {
   return (
     <>
       <Route exact path='/' component={HomePage} />
-      <Route path={"/(.+)"} render />
-      <NavBar setFormOpen={handleCreateFormOpen} />
+      <Route path={"/(.+)"} render={() => (
+        <NavBar setFormOpen={handleCreateFormOpen} />
       <Container className='main'>
         <Route exact path='/events' component={EventDashboard} />
         <Route path='/events/:id' component={EventDetailedPage} />
         <Route path='/createEvent' component={EventForm} />
       </Container>
+      )} />
     </>
   );
 }
