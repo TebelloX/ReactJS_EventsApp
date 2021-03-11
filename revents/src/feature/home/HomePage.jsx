@@ -22,7 +22,7 @@ export default function HomePage() {
         </Header>
         <Button size='huge' inverted>
           Get started
-          <Icon name='right arrow' />
+          <Icon name='right arrow' inverted />
         </Button>
       </Container>
     </Segment>
