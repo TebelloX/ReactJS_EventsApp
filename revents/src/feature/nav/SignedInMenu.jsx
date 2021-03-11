@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Button, Image, Dropdown } from "semantic-ui-react";
+import { Menu, Image, Dropdown } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 export default function SignedOutMenu() {
@@ -15,7 +15,7 @@ export default function SignedOutMenu() {
             icon='plus'
           />
           <Dropdown.Item text='My Profile' icon='plus' />
-          <Dropdown.Item text='Create Event' icon='plus' />
+          <Dropdown.Item text='Sign Out' icon='power' />
         </Dropdown.Menu>
       </Dropdown>
     </Menu.Item>
