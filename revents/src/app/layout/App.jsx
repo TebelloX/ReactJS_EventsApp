@@ -24,7 +24,7 @@ export default function App() {
   return (
     <>
       <Route exact path='/' component={HomePage} />
-      <Route path={} render />
+      <Route path={"/(.+)"} render />
       <NavBar setFormOpen={handleCreateFormOpen} />
       <Container className='main'>
         <Route exact path='/events' component={EventDashboard} />
