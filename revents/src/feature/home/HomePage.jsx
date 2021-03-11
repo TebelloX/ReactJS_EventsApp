@@ -13,7 +13,9 @@ export default function HomePage() {
           />
           Re-vents
         </Header>
-        <Button size='huge' inverted></Button>
+        <Button size='huge' inverted>
+          Get started
+        </Button>
       </Container>
     </Segment>
   );
