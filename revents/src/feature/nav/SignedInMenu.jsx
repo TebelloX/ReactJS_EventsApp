@@ -14,6 +14,8 @@ export default function SignedOutMenu() {
             text='Create Event'
             icon='plus'
           />
+          <Dropdown.Item text='My Profile' icon='plus' />
+          <Dropdown.Item text='Create Event' icon='plus' />
         </Dropdown.Menu>
       </Dropdown>
     </Menu.Item>
