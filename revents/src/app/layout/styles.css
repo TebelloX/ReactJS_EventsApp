@@ -9,3 +9,8 @@ body {
 .ui.main.container {
   margin-top: 7em;
 }
+
+.masthead {
+  display: flex;
+  align-items: center;
+}
