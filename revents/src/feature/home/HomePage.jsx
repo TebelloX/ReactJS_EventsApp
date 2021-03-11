@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <Segment inverted textAlign='center' vertical className='masthead'>
       <Container>
-        <Header></Header>
+        <Header as='h1' inverted></Header>
       </Container>
     </Segment>
   );
