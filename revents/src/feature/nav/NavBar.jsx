@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, Container, Button } from "semantic-ui-react";
 import SignedOutMenu from "./SignedOutMenu";
+import SignedInMenu from "./SignedInMenu";
 
 export default function NavBar({ setFormOpen }) {
   return (
@@ -19,6 +20,7 @@ export default function NavBar({ setFormOpen }) {
           <Button positive inverted content='Create Event' />
         </Menu.Item>
         <SignedOutMenu />
+        <SignedInMenu />
       </Container>
     </Menu>
   );
