@@ -20,7 +20,7 @@ export default function HomePage({ history }) {
           />
           Re-vents
         </Header>
-        <Button size='huge' inverted>
+        <Button onClick={() => history.push("/events")} size='huge' inverted>
           Get started
           <Icon name='right arrow' inverted />
         </Button>
