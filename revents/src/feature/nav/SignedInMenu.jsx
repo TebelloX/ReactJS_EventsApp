@@ -16,7 +16,7 @@ export default function SignedOutMenu({ setAuthenticated }) {
           />
           <Dropdown.Item text='My Profile' icon='plus' />
           <Dropdown.Item
-            onClick={() => setAuthenticated(true)}
+            onClick={() => setAuthenticated(false)}
             text='Sign Out'
             icon='power'
           />
