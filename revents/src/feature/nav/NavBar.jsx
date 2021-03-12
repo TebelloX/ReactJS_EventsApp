@@ -23,7 +23,11 @@ export default function NavBar({ setFormOpen }) {
             <Button positive inverted content='Create Event' />
           </Menu.Item>
         )}
-        {authenticated ? <SignedInMenu /> : <SignedOutMenu />}
+        {authenticated ? (
+          <SignedInMenu setAuthenticated />
+        ) : (
+          <SignedOutMenu setAuthenticated />
+        )}
       </Container>
     </Menu>
   );
