@@ -6,6 +6,7 @@ import SignedInMenu from "./SignedInMenu";
 
 export default function NavBar({ setFormOpen }) {
   const [authenticated, setAuthenticated] = useState(false);
+
   return (
     <Menu inverted fixed='top'>
       <Container>
@@ -20,8 +21,7 @@ export default function NavBar({ setFormOpen }) {
         <Menu.Item as={NavLink} to='/createEvent'>
           <Button positive inverted content='Create Event' />
         </Menu.Item>
-        <SignedOutMenu />
-        <SignedInMenu />
+        {authenticated ? <SignedInMenu /> : <SignedOutMenu />}
       </Container>
     </Menu>
   );
