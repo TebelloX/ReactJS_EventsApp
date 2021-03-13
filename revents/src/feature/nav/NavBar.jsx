@@ -5,6 +5,7 @@ import SignedOutMenu from "./SignedOutMenu";
 import SignedInMenu from "./SignedInMenu";
 
 export default function NavBar({ setFormOpen }) {
+  const history = useHistory();
   const [authenticated, setAuthenticated] = useState(false);
 
   return (
