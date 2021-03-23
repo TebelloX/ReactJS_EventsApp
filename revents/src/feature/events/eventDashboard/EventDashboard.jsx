@@ -42,7 +42,7 @@ export default function EventDashboard({
             setFormOpen={setFormOpen}
             setEvents={setEvents}
             createEvent={handleCreateEvent}
-            selectedEvent={selectedEvent}
+            selectEvent={selectEvent}
             updateEvent={handleUpdateEvent}
             key={selectedEvent ? selectedEvent.id : null}
           />
